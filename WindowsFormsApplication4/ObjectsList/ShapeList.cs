@@ -33,10 +33,7 @@ namespace HotDogBush
                     if (i < Shapes.Count)
                         ((Drawable)Shapes[i]).Draw(g);
                 }
-
             }
-
-
         }
 
         public Shape IsHovered(float x, float y)

@@ -36,17 +36,24 @@ namespace HotDogBush
             isEmpty.Add(true);
             isEmpty.Add(true);
 
-            timers.Add(new Timer());
-            timers.Add(new Timer());
-            timers.Add(new Timer());
+            for (int i = 0; i < 3; i++)
+            {
+                timers.Add(new Timer());
+                timers[i].Interval = 7000;
+                timers[i].Tick += Grill_Tick;
+            }
 
-            timers[0].Interval = 7000;
-            timers[1].Interval = 7000;
-            timers[2].Interval = 7000;
+               
+            //timers.Add(new Timer());
+            //timers.Add(new Timer());
 
-            timers[0].Tick += Grill_Tick;
-            timers[1].Tick += Grill_Tick;
-            timers[2].Tick += Grill_Tick;
+            
+            //timers[1].Interval = 7000;
+            //timers[2].Interval = 7000;
+
+            
+            //timers[1].Tick += Grill_Tick;
+            //timers[2].Tick += Grill_Tick;
 
         }
 
