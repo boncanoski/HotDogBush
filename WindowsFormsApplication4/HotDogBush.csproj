@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55C035A9-7F85-4F5D-A3F0-32DD26AD4B30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HotDogBush</RootNamespace>
+    <AssemblyName>HotDog</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Bread.cs" />
+    <Compile Include="Classes\Coins.cs" />
+    <Compile Include="ObjectsList\CustomersPositions.cs" />
+    <Compile Include="Classes\Drinks.cs" />
+    <Compile Include="Forms\EndOfGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EndOfGame.Designer.cs">
+      <DependentUpon>EndOfGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\EnterData.cs" />
+    <Compile Include="Forms\HighScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HighScores.Designer.cs">
+      <DependentUpon>HighScores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Money.cs" />
+    <Compile Include="Classes\Order.cs" />
+    <Compile Include="ObjectsList\OrderList.cs" />
+    <Compile Include="Classes\Person.cs" />
+    <Compile Include="ObjectsList\PersonList.cs" />
+    <Compile Include="Classes\Trash.cs" />
+    <Compile Include="Interfaces\Drawable.cs" />
+    <Compile Include="Forms\Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Grill.cs" />
+    <Compile Include="Classes\Ketchup.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\ClickObject.cs" />
+    <Compile Include="Classes\Sausage.cs" />
+    <Compile Include="Classes\Shape.cs" />
+    <Compile Include="ObjectsList\ShapeList.cs" />
+    <Compile Include="ObjectsList\Table.cs" />
+    <Compile Include="Classes\Water.cs" />
+    <EmbeddedResource Include="Forms\EndOfGame.resx">
+      <DependentUpon>EndOfGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ketchup-bottle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ketchup-bottle-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sausage_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sausage_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sausage_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sausages.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glasses.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HighScores.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instructions.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instructions1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InstructionsEdited.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
