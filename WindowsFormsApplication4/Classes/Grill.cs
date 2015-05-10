@@ -42,19 +42,6 @@ namespace HotDogBush
                 timers[i].Interval = 7000;
                 timers[i].Tick += Grill_Tick;
             }
-
-               
-            //timers.Add(new Timer());
-            //timers.Add(new Timer());
-
-            
-            //timers[1].Interval = 7000;
-            //timers[2].Interval = 7000;
-
-            
-            //timers[1].Tick += Grill_Tick;
-            //timers[2].Tick += Grill_Tick;
-
         }
 
         void Grill_Tick(object sender, EventArgs e)

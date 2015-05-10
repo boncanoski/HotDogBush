@@ -12,3 +12,11 @@ C:\Users\user\Documents\Visual Studio 2013\Projects\WindowsFormsApplication4\Win
 D:\Projects\HotDogBush\WindowsFormsApplication4\bin\Debug\HotDog.exe.config
 D:\Projects\HotDogBush\WindowsFormsApplication4\obj\Debug\HotDog.exe
 D:\Projects\HotDogBush\WindowsFormsApplication4\obj\Debug\HotDog.pdb
+D:\Projects\HotDogBush\WindowsFormsApplication4\bin\Debug\HotDog.exe
+D:\Projects\HotDogBush\WindowsFormsApplication4\bin\Debug\HotDog.pdb
+D:\Projects\HotDogBush\WindowsFormsApplication4\obj\Debug\HotDogBush.csprojResolveAssemblyReference.cache
+D:\Projects\HotDogBush\WindowsFormsApplication4\obj\Debug\HotDogBush.EndOfGame.resources
+D:\Projects\HotDogBush\WindowsFormsApplication4\obj\Debug\HotDogBush.Game.resources
+D:\Projects\HotDogBush\WindowsFormsApplication4\obj\Debug\HotDogBush.Home.resources
+D:\Projects\HotDogBush\WindowsFormsApplication4\obj\Debug\HotDogBush.Properties.Resources.resources
+D:\Projects\HotDogBush\WindowsFormsApplication4\obj\Debug\HotDogBush.csproj.GenerateResource.Cache

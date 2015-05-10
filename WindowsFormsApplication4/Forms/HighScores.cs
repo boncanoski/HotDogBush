@@ -27,7 +27,7 @@ namespace HotDogBush
                 {
                     string s = Reader.ReadLine();
                     string[] prv = s.Split(';');
-                    string print = string.Format("{0,-60} {1,3}", prv[0], prv[1]);
+                    string print = string.Format("{0,-60} {1}", prv[0], prv[1]);
                     listBox1.Items.Add(print);
                 }
             }
