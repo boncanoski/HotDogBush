@@ -9,3 +9,6 @@ C:\Users\user\Documents\Visual Studio 2013\Projects\WindowsFormsApplication4\Win
 C:\Users\user\Documents\Visual Studio 2013\Projects\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\HotDog.pdb
 C:\Users\user\Documents\Visual Studio 2013\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\HotDog.exe
 C:\Users\user\Documents\Visual Studio 2013\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\HotDog.pdb
+D:\Projects\HotDogBush\WindowsFormsApplication4\bin\Debug\HotDog.exe.config
+D:\Projects\HotDogBush\WindowsFormsApplication4\obj\Debug\HotDog.exe
+D:\Projects\HotDogBush\WindowsFormsApplication4\obj\Debug\HotDog.pdb

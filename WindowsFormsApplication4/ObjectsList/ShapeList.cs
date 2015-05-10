@@ -10,13 +10,11 @@ namespace HotDogBush
 {
     public class ShapeList
     {
-        //public List<Drawable> Shapes;
-        //public Queue<Drawable> list;
-        public ArrayList Shapes = new ArrayList();
+        public ArrayList Shapes;
 
         public ShapeList()
         {
-            //Shapes = new List<Drawable>();
+            Shapes = new ArrayList();
         }
 
         public void Draw(Graphics g)
@@ -35,26 +33,16 @@ namespace HotDogBush
                     if (i < Shapes.Count)
                         ((Drawable)Shapes[i]).Draw(g);
                 }
-                //foreach (Drawable s in Shapes)
-                //{
-                //    if (s is Shape)
-                //    {
 
-                //        if (s != null && s is Person && ((Person)s).ShouldMove)
-                //            ((Person)s).MoveTo();
-                //    }
-                //    s.Draw(g);
-                //}
-                    
             }
-            
-            
+
+
         }
 
         public Shape IsHovered(float x, float y)
         {
             foreach (Shape s in Shapes)
-                if (s.IsHovered(x, y)!=null)
+                if (s.IsHovered(x, y) != null)
                     return s;
             return null;
         }
