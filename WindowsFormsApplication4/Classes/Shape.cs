@@ -67,9 +67,5 @@ namespace HotDogBush
                 this.Selected.Y = origY;
             }
         }
-
-        //public abstract void MouseDown();
-
-        //public abstract void MouseUp();
     }
 }
